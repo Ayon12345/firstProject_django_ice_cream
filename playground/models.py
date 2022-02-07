@@ -9,3 +9,8 @@ class Login(models.Model):
 
 def __str__(self):
     return self.email
+
+
+class Thumb(models.Model):
+    image = models.ImageField()
+    description = models.CharField(max_length=255)

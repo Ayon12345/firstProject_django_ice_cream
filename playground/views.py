@@ -38,4 +38,10 @@ def login(request):
 def signup(request):
     return render(request, 'signup.html')
 
-    #return HttpResponse('It will find your location')
+    # return HttpResponse('It will find your location')
+
+
+def thumb(request):
+    image = request.POST.get('image')
+    description = request.POST.get('description')
+
